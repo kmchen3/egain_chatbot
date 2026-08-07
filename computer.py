@@ -12,7 +12,7 @@ def computer_status():
 
     elif choice == "2":
         print("\nPlease do so now.")
-        print("\nDid that fix the issue?")
+        print("Did that fix the issue?")
         print("1. Yes")
         print("2. No")
     
