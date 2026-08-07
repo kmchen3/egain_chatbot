@@ -17,6 +17,7 @@ def get_choice(valid_choices):
 
         return choice
 
+# Displays the main menu and available troubleshooting categories
 def display_menu():
     print("~" * 26)
     print(" Customer Service Chatbot")
@@ -27,12 +28,14 @@ def display_menu():
     print("4. Printer won't print ")
     print("5. Other (Please Explain) ")
     print("6. Exit\n")
-    
+
+# Confirms that the user's issue has been resolved and ends the chatbot
 def solved():
     print("\nYay! I'm glad I could help resolve this issue.")
     print("\nI shall leave you to it, if you need any more help in the future, I'd love to chat :)")
     exit()
-
+    
+# Directs the user to additional technical support when the chatbot cannot resolve the issue
 def contact_support():
     print("\nSorry, this issue may require additional technical support, please contact us !!")
     print("https://www.egain.com/contact-us/")
