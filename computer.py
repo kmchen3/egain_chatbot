@@ -1,5 +1,6 @@
 from utils import get_choice, solved, contact_support
 
+# Handles the initial check for whether the computer has enough power
 def computer_status():
     print("\nIs your computer fully charged or plugged in?")
     print("1. Yes")
@@ -23,7 +24,7 @@ def computer_status():
         elif choice == "2":
             computer_response()
         
-        
+# Checks whether holding the power button resolves the issue
 def hold_power_button():
     print("\nDid you hold the power button?")
     print("1. Yes")
@@ -47,7 +48,7 @@ def hold_power_button():
         elif choice == "2":
             computer_response()
         
-        
+# Determines whether the computer shows any signs of powering on
 def computer_response():
     print("\nDoes anything turn on? Ex. Does the fan turn on? Does the keyboard light up?")
     print("1. Yes")
