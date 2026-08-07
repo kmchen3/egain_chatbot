@@ -1,5 +1,7 @@
 from utils import get_choice, solved, contact_support
 
+
+# initial Wi-Fi troubleshooting questions
 def wifi_flow():
     print("\nAre any lights blinking on your router?")
     print("1. Yes")
@@ -32,8 +34,8 @@ def wifi_flow():
             elif choice == "2":
                 check_wifi_connection()
 
-
-def restart_router(): # 1
+# Checks whether restarting the router resolves the issue
+def restart_router(): 
     print("\nHave you tried restarting your router?")
     print("1. Yes")
     print("2. No")
@@ -57,7 +59,7 @@ def restart_router(): # 1
         elif choice == "2":
             check_wifi_connection()
 
-
+# Determines whether the user's device can detect the Wi-Fi network
 def check_wifi_connection(): # 1 -> 1, 2 -> 1
     print("\nCan your device see the Wi-Fi network?")
     print("1. Yes")
@@ -73,7 +75,7 @@ def check_wifi_connection(): # 1 -> 1, 2 -> 1
         print("Can another device connect to the Wi-Fi?")
         check_other_devices()
 
-
+# Checks whether an incorrect Wi-Fi password is causing the problem
 def check_password():
     print("\nDid you enter the correct Wi-Fi password?")
     print("1. Yes")
@@ -89,6 +91,7 @@ def check_password():
         print("\nPlease verify that you're using the correct password.")
         enter_the_right_password()
         
+# Repeatedly prompts the user to enter the correct Wi-Fi password
 def enter_the_right_password():
     print("Did you enter the correct Wi-Fi password?")
     print("1. Yes")
@@ -104,7 +107,7 @@ def enter_the_right_password():
         print("\nTry again using the correct password.")
         enter_the_right_password()
 
-
+# Determines whether the Wi-Fi problem affects multiple devices
 def check_other_devices():
     print("1. Yes")
     print("2. No")
@@ -128,3 +131,4 @@ def check_other_devices():
     elif choice == "2":
         contact_support()
         
+    
