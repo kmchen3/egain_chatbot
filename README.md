@@ -14,8 +14,8 @@ The chatbot guides users through different categories, asks follow-up questions,
 1. Clone the repository:
 
 ```bash
-git clone <(https://github.com/kmchen3/egain_chatbot/)>
-cd <project-folder>
+git clone <https://github.com/kmchen3/egain_chatbot/>
+cd egain_chatbot
 python main.py
 ```
 
