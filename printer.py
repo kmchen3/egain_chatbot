@@ -1,5 +1,6 @@
 from utils import get_choice, solved, contact_support
 
+# Handles the initial check to make sure the printer is powered on
 def printer_troubleshoot():
     print("\nIs your printer on?")
     print("1. Yes")
@@ -22,7 +23,8 @@ def printer_troubleshoot():
             solved()
         elif choice == "2":
             connection_status()
-            
+     
+# Checks for warning lights that may indicate a printer problem       
 def warning_lights():
     print("\nAre there any warning lights on/blinking?")
     print("1. Yes")
@@ -45,7 +47,8 @@ def warning_lights():
 
     elif choice == "2":
         connection_status()
-    
+
+# Checks whether the user's device is properly connected to the printer
 def connection_status():
     print("\nIs your device connected to the printer? (via. Bluetooth or Plug-In)")
     print("1. Yes")
@@ -67,10 +70,11 @@ def connection_status():
         if choice == "1":
             sufficient_materials()
         elif choice == "2":
+            # Failed connection may indicate an issue with printer drivers
             print("\nDrivers may be outdated.")
             contact_support()
         
-            
+# Checks whether the printer has enough paper and ink to operate
 def sufficient_materials():
     print("\nIs there enough materials? (i.e. ink and paper)")
     print("1. Yes")
