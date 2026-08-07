@@ -1,6 +1,5 @@
 from utils import get_choice, solved, contact_support
 
-
 # initial Wi-Fi troubleshooting questions
 def wifi_flow():
     print("\nAre any lights blinking on your router?")
